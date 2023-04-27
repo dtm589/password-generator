@@ -22,6 +22,12 @@ function generatePassword() {
     return;
   }
 
+  // Check if the user input a number
+  if (typeof length !== 'number') {
+    alert("Password length must be a valid number.");
+    return;
+  }
+
   // Ask user what characters to include
   let lowercase = confirm("Would you like to include lowercase letters?");
   let uppercase = confirm("would you like to include uppercase letters?");
