@@ -23,7 +23,7 @@ function generatePassword() {
   }
 
   // Check if the user input a number
-  if (typeof length !== 'number') {
+  if (isNaN(length)) {
     alert("Password length must be a valid number.");
     return;
   }
